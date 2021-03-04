@@ -1,18 +1,12 @@
-# Xiaomi Mi Flora Plant Sensor MQTT Client/Daemon
+# BLE MQTT Client/Daemon
 
-A simple Linux python script to query arbitrary Mi Flora plant sensor devices and send the data to an **MQTT** broker,
+A simple Linux python script to query arbitrary sensor devices and send the data to an **MQTT** broker,
 e.g., the famous [Eclipse Mosquitto](https://projects.eclipse.org/projects/technology.mosquitto).
 After data made the hop to the MQTT broker it can be used by home automation software, like [openHAB](https://openhab.org) or Home Assistant.
 
 ![Demo gif for command line execution](demo.gif)
 
 The program can be executed in **daemon mode** to run continuously in the background, e.g., as a systemd service.
-
-## About Mi Flora
-* [Xiaomi Mi Flora sensors](https://xiaomi-mi.com/sockets-and-sensors/xiaomi-huahuacaocao-flower-care-smart-monitor) ([e.g. 12-17€](https://www.aliexpress.com/wholesale?SearchText=xiaomi+mi+flora+plant+sensor)) are meant to keep your plants alive by monitoring soil moisture, soil conductivity and light conditions
-* The sensor uses Bluetooth Low Energy (BLE) and has a rather limited range
-* A coin cell battery is used as power source, which should last between 1.5 to 2 years under normal conditions
-* Food for thought: The sensor can also be used for other things than plants, like in the [fridge](https://community.openhab.org/t/refrigerator-temperature-sensors/40076) or as [door and blind sensor](https://community.openhab.org/t/miflora-cheap-window-and-door-sensor-water-sensor-blind-sensor-etc/38232)
 
 ## Features
 
@@ -35,8 +29,6 @@ The program can be executed in **daemon mode** to run continuously in the backgr
 * No special/root privileges needed
 * Linux daemon / systemd service, sd\_notify messages generated
 
-
-![Promotional image](https://xiaomi-mi.com/uploads/ck/xiaomi-flower-monitor-001.jpg)
 
 ### Readings
 
